@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'com.google.gms:google-services:3.0.0'
+    }
+}
+
+ext {
+        scarabeiRedVersion = "5e3fb43312"
+        
+                           
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://maven.google.com" }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        flatDir {dirs '../libs'}
+    }
+
+}
+
+
