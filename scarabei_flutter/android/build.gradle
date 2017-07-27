@@ -1,0 +1,59 @@
+group 'com.jfixby.scarabei.flutter.scarabeiflutter'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://maven.google.com" }
+        maven { url 'https://jitpack.io' }
+    }
+
+
+}
+
+
+apply plugin: 'com.android.library'
+
+ext {
+    scarabeiVersion = "2.1.0"
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.0'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+
+}
+
+dependencies {
+
+    compile "com.github.Scarabei.Scarabei:scarabei-api-android:$scarabeiVersion"
+    compile "com.github.Scarabei.Scarabei:scarabei-api:$scarabeiVersion"
+
+}

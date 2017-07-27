@@ -1,0 +1,14 @@
+name: scarabei_flutter
+description: A new flutter plugin project.
+version: 0.0.1
+author:
+homepage:
+
+flutter:
+  plugin:
+    androidPackage: com.jfixby.scarabei.flutter.scarabeiflutter
+    pluginClass: ScarabeiFlutterPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
