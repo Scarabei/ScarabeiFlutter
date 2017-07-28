@@ -54,6 +54,6 @@ android {
 dependencies {
 
     compile "com.github.Scarabei.Scarabei:scarabei-api-android:$scarabeiVersion"
-    compile "com.github.Scarabei.Scarabei:scarabei-api:$scarabeiVersion"
+
 
 }
