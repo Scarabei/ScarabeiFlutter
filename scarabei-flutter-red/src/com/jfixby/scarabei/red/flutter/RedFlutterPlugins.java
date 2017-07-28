@@ -6,27 +6,25 @@ import com.jfixby.scarabei.api.flutter.plugins.FlutterPluginSpecs;
 import com.jfixby.scarabei.api.flutter.plugins.FlutterPluginsComponent;
 import com.jfixby.scarabei.api.log.L;
 
-import io.flutter.app.FlutterActivity;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 public class RedFlutterPlugins implements FlutterPluginsComponent {
 
-	private final FlutterActivity activity;
+	private final PluginRegistry registry;
 
-	public RedFlutterPlugins (final FlutterActivity activity) {
-		this.activity = activity;
+	public RedFlutterPlugins (final PluginRegistry registry) {
+		this.registry = registry;
 
 	}
 
 	void registerPlugin (final MethodChannel.MethodCallHandler plugin, final String channelName) {
-		final PluginRegistry registry = this.activity;
 		final String className = plugin.getClass().getCanonicalName();
-		final Registrar registrar = registry.registrarFor(className);
+		final Registrar registrar = this.registry.registrarFor(className);
 		final MethodChannel channel = new MethodChannel(registrar.messenger(), channelName);
 		channel.setMethodCallHandler(plugin);
-		L.d("FlutterPlugin registed[" + channelName + "]", plugin);
+		L.d("FlutterPlugin registered[" + channelName + "]", plugin);
 	}
 
 	@Override

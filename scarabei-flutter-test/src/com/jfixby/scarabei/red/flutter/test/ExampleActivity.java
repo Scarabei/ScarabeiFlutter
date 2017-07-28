@@ -20,8 +20,6 @@ public class ExampleActivity extends FlutterActivity {
 	protected void onCreate (final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-// GeneratedPluginRegistrant.registerWith(this);
-
 		this.deployer.tryToDeploy(this);
 
 		final FlutterPluginsComponent flutterPlugins = new RedFlutterPlugins(this);
