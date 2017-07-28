@@ -100,6 +100,12 @@ public class PlatformPlugin implements MethodChannel.MethodCallHandler, Activity
 		this.mActivity.setRequestedOrientation(androidOrientation);
 	}
 
+	static {
+		if (1 == 1) {
+			throw new RuntimeException("Stub!");
+		}
+	}
+
 	private void setSystemChromeApplicationSwitcherDescription (final JSONObject description) throws JSONException {
 		if (VERSION.SDK_INT >= 21) {
 			int color = description.getInt("primaryColor");

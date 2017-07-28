@@ -12,6 +12,7 @@ import org.json.JSONObject;
 
 public class JSONUtil {
 	public static Object wrap (final Object o) {
+
 		if (o == null) {
 			return JSONObject.NULL;
 		} else if (!(o instanceof JSONArray) && !(o instanceof JSONObject)) {
@@ -69,10 +70,13 @@ public class JSONUtil {
 					;
 				}
 
-				return null;
+// return null;
+				throw new RuntimeException("Stub!");
 			}
 		} else {
-			return o;
+// return o;
+			throw new RuntimeException("Stub!");
 		}
+
 	}
 }

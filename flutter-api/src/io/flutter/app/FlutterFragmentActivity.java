@@ -19,6 +19,7 @@ public class FlutterFragmentActivity extends Fragment
 // this.eventDelegate = this.delegate;
 // this.viewProvider = this.delegate;
 // this.pluginRegistry = this.delegate;
+		throw new RuntimeException("Stub!");
 	}
 
 	@Override

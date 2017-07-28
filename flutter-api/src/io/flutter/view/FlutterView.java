@@ -86,6 +86,13 @@ public class FlutterView extends SurfaceView implements BinaryMessenger, Accessi
 
 	public FlutterView (final Context context) {
 		this(context, (AttributeSet)null);
+		throw new RuntimeException("Stub!");
+	}
+
+	{
+		if (1 == 1) {
+			throw new RuntimeException("Stub!");
+		}
 	}
 
 	public FlutterView (final Context context, final AttributeSet attrs) {

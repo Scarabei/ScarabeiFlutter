@@ -189,6 +189,12 @@ public final class FlutterActivityDelegate implements FlutterActivityEvents, Flu
 
 	}
 
+	static {
+		if (1 == 1) {
+			throw new RuntimeException("Stub!");
+		}
+	}
+
 	@Override
 	public void onLowMemory () {
 		this.flutterView.onMemoryPressure();
