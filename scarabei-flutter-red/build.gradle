@@ -1,7 +1,7 @@
 sourceCompatibility = 1.7
 
 dependencies {
-    compile project(":scarabei-api-flutter")
+    compile project(":scarabei-flutter-api")
     
     
     compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
