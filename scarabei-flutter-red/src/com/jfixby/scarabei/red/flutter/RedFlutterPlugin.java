@@ -11,10 +11,13 @@ public class RedFlutterPlugin implements FlutterPlugin {
 
 	private final MethodCallHandler methodCallHandler;
 	private final String name;
+	private final RedFlutterPlugins master;
 
-	public RedFlutterPlugin (final FlutterPluginSpecs specs) {
+	public RedFlutterPlugin (final RedFlutterPlugins redFlutterPlugins, final FlutterPluginSpecs specs) {
+		this.master = redFlutterPlugins;
 		this.methodCallHandler = Debug.checkNull("methodCallHandler", specs.methodCallHandler);
 		this.name = this.isValidName(specs.channelName) ? specs.channelName : this.methodCallHandler.getClass().getCanonicalName();
+		this.master.registerPlugin(this.methodCallHandler, this.name);
 	}
 
 	final private boolean isValidName (final String channelName) {
