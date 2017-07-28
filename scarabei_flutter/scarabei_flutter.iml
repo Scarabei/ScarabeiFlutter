@@ -31,9 +31,6 @@
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/jfixby/scarabei/flutter/scarabeiflutterexample/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/jfixby/scarabei/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/io/flutter/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/io/flutter/plugins/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/io/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/res/mipmap-hdpi/packages" />

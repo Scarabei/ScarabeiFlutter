@@ -29,9 +29,7 @@ allprojects {
 
 apply plugin: 'com.android.library'
 
-ext {
-    scarabeiVersion = "2.1.0"
-}
+
 
 android {
     compileSdkVersion 25
@@ -52,8 +50,6 @@ android {
 }
 
 dependencies {
-
-    compile "com.github.Scarabei.Scarabei:scarabei-api-android:$scarabeiVersion"
 
 
 }
