@@ -6,9 +6,6 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
-      <excludeFolder url="file://$MODULE_DIR$/example/.idea/libraries/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/.idea/packages" />
-      <excludeFolder url="file://$MODULE_DIR$/example/.idea/runConfigurations/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/3.3/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/3.3/taskArtifacts/packages" />
@@ -23,6 +20,8 @@
       <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/3.3/tasks/_scarabei_flutter_compileReleaseJavaWithJavac/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/3.3/tasks/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/.gradle/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.idea/libraries/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/.idea/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/jfixby/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/java/com/jfixby/scarabei/flutter/packages" />
@@ -41,6 +40,7 @@
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/main/res/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/app/src/packages" />
+      <excludeFolder url="file://$MODULE_DIR$/example/android/gen/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/gradle/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/gradle/wrapper/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/android/packages" />

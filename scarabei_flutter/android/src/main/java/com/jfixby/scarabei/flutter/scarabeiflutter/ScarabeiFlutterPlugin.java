@@ -1,5 +1,6 @@
 package com.jfixby.scarabei.flutter.scarabeiflutter;
 
+import com.jfixby.scarabei.android.api.Android;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -23,8 +24,8 @@ public class ScarabeiFlutterPlugin implements MethodCallHandler {
         if (call.method.equals("getPlatformVersion")) {
 
 //            L.d("Hello!");
-//            String message = "Android " + android.os.Build.VERSION.RELEASE + " " + Android.invoke();
-            String message = "Android " + android.os.Build.VERSION.RELEASE;
+            String message = "Android " + android.os.Build.VERSION.RELEASE + " " + Android.getSystemInfo();
+//            String message = "Android " + android.os.Build.VERSION.RELEASE;
 
             result.success(message);
         } else {
