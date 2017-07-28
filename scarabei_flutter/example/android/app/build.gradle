@@ -59,7 +59,7 @@ flutter {
 
 ext {
     scarabeiVersion = "2.1.1"
-    scarabeiFlutterVersion = "B.0.0"
+    scarabeiFlutterVersion = "B.0.2"
 
 }
 

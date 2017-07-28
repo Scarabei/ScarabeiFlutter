@@ -10,7 +10,7 @@ buildscript {
 
 
 ext {
-   flutterAPIversion = "2017-07-24-5278588d80"
+
    scarabeiVersion = "2.1.1"
 }
 

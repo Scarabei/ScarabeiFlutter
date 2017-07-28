@@ -1,7 +1,0 @@
-sourceCompatibility = 1.7
-
-dependencies {
-    compile project(":scarabei-flutter-api")
-    
-    
-}
