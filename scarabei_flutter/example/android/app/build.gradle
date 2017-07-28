@@ -30,6 +30,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled = true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
     }
 
     buildTypes {
@@ -39,6 +45,15 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    configurations {
+//        all*.exclude "com.github.Scarabei.Flutter:flutter-api"
+//        all*.exclude group: 'com.android.support', module: 'support-v4'
+        all*.exclude group: "com.github.Scarabei.Flutter", module: "flutter-api"
+        //compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
+
+
+    }
 }
 
 flutter {
@@ -46,7 +61,8 @@ flutter {
 }
 
 ext {
-    scarabeiVersion = "2.1.0"
+    scarabeiVersion = "2.1.1"
+    scarabeiFlutterVersion = "A.0.2"
 }
 
 dependencies {
@@ -55,8 +71,12 @@ dependencies {
 
     androidTestCompile 'com.android.support.test:rules:0.5'
 
+    compile 'com.android.support:multidex:1.0.1'
+
 
     compile "com.github.Scarabei.Scarabei:scarabei-red-android:$scarabeiVersion"
+    //compile "com.github.Scarabei.ScarabeiFlutter:scarabei-flutter-red:$scarabeiFlutterVersion"
+    compile "com.github.Scarabei.ScarabeiFlutter:scarabei-flutter-red:A.0.2"
 
 
 }
