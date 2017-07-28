@@ -4,7 +4,4 @@ dependencies {
     compile project(":scarabei-flutter-api")
     
     
-    compile "com.github.Scarabei.Flutter:flutter-api:$flutterAPIversion"
-    compile "com.github.Scarabei.Scarabei:scarabei-api-android:$scarabeiVersion"
-    
 }

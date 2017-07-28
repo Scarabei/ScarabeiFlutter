@@ -1,5 +1,6 @@
 include "scarabei-flutter-api"
 include "scarabei-flutter-red"
+include "scarabei-flutter-test"
 
 
 
